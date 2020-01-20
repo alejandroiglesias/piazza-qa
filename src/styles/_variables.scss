@@ -10,6 +10,8 @@
 $white: #fff !default;
 $gray-300: #dee2e6 !default;
 $gray-500: #adb5bd !default;
+$gray-550: #80858a;
+$gray-800: #343a40 !default;
 
 $primary: #3e7aab;
 $secondary: #aaa;
@@ -48,6 +50,8 @@ $font-weight-semibold: 500;
 
 $small-font-size: 84.62%; // 11px
 
+$text-muted: $gray-550;
+
 // Buttons + Forms
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
@@ -75,3 +79,7 @@ $input-height-inner-quarter-sm: add(
   $input-line-height-sm * 0.25em,
   $input-padding-y-sm / 2
 ) !default;
+
+// List groups
+
+$list-group-action-color: $gray-800;
