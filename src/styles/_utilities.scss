@@ -1,0 +1,9 @@
+// Adjustment for bg-gradient-light
+.bg-gradient-light {
+  background: linear-gradient(to bottom, #f3f3f4 0%, #dee0e2 100%) !important;
+}
+
+// Text
+.font-weight-semibold {
+  font-weight: $font-weight-semibold !important;
+}

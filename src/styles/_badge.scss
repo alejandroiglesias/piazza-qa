@@ -1,0 +1,19 @@
+// Unread badges
+.badge-unread {
+  @include border-radius(50%);
+  @include size(9px);
+  border: 1px solid transparent;
+  padding: 0;
+
+  &:empty {
+    display: block;
+  }
+
+  // Colors
+  @each $color, $value in $theme-colors {
+    &.badge-#{$color} {
+      @include gradient-bg(lighten($value, 12%));
+      border-color: $value;
+    }
+  }
+}

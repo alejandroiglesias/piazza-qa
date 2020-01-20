@@ -1,0 +1,77 @@
+@import "~bootstrap/scss/functions";
+
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+
+$white: #fff !default;
+$gray-300: #dee2e6 !default;
+$gray-500: #adb5bd !default;
+
+$primary: #3e7aab;
+$secondary: #aaa;
+$success: #8cc63e;
+$warning: #faae3f;
+
+// Characters which are escaped by the escape-svg function
+$escaped-characters: (("<", "%3c"), (">", "%3e"), ("#", "%23")) !default;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-shadows: true;
+$enable-gradients: true;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-radius: 4px;
+$border-radius-sm: 2px;
+
+$line-height-sm: 1.5 !default;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-size-base: 1rem;
+$font-size-sm: 0.923rem;
+
+$font-weight-semibold: 500;
+
+$small-font-size: 84.62%; // 11px
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y-sm: 0.25rem !default;
+$input-btn-padding-x-sm: 0.5rem !default;
+$input-btn-font-size-sm: $font-size-sm !default;
+$input-btn-line-height-sm: $line-height-sm !default;
+
+// Forms
+
+$input-border-color: #999;
+$input-border-radius-sm: $border-radius;
+$input-box-shadow: 0 0 3px #ccc, inset 0 1px 5px #bbb;
+
+$input-font-size-sm: $font-size-base;
+
+$input-padding-y-sm: $input-btn-padding-y-sm !default;
+$input-padding-x-sm: $input-btn-padding-x-sm !default;
+$input-line-height-sm: $input-btn-line-height-sm !default;
+
+$input-height-inner-sm: add($input-line-height-sm * 1em, $input-padding-y-sm * 2) !default;
+$input-height-inner-half-sm: add($input-line-height-sm * 0.5em, $input-padding-y-sm) !default;
+$input-height-inner-quarter-sm: add(
+  $input-line-height-sm * 0.25em,
+  $input-padding-y-sm / 2
+) !default;

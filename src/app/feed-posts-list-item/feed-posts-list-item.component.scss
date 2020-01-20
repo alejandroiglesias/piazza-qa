@@ -1,0 +1,42 @@
+@import "../../styles/variables";
+
+.feed-posts-list-item-content {
+  flex-grow: 1;
+  width: 0;
+}
+
+.feed-posts-list-item-date {
+  line-height: 1.2;
+}
+
+.feed-posts-list-item-date,
+.feed-posts-list-item-content-title {
+  font-size: 0.924rem; // 12px
+}
+
+.feed-posts-list-item-content-details {
+  line-height: 1.25;
+}
+
+.post-badge {
+  align-items: center;
+  border-radius: $border-radius-sm;
+  display: inline-flex;
+  flex-grow: 1;
+  font-weight: 500;
+  height: 16px;
+  justify-content: center;
+  width: 14px;
+}
+
+// Individual adjustment to badges
+.post-badge--replies {
+  font-size: 90%;
+}
+.post-badge--student,
+.post-badge--instructor {
+  font-size: 65%;
+}
+.post-badge--instructor {
+  padding-left: calc(0.4em + 1px);
+}

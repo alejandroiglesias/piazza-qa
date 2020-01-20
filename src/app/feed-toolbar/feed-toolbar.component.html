@@ -1,0 +1,7 @@
+<div class="bg-secondary d-flex p-2">
+  <button type="button" class="btn btn-sm btn-primary text-nowrap mr-2" (click)="newPost.emit()">
+    <fa-icon class="mr-1" [icon]="faFile"></fa-icon>
+    New Post
+  </button>
+  <app-search-input (search)="search.emit($event)"></app-search-input>
+</div>

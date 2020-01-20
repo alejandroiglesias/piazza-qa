@@ -1,0 +1,5 @@
+<app-feed-post-group
+  [postGroup]="postGroup"
+  (postClick)="onPostClick($event)"
+  *ngFor="let postGroup of posts"
+></app-feed-post-group>
